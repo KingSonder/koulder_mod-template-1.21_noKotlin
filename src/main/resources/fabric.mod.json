@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 0.1,
+	"id": "koulder_mod",
+	"version": "${version}",
+	"name": "Koulder_mod",
+	"description": "我的第一个mod",
+	"authors": [
+		"是米饭的啊哦"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/koulder_mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.koulder_mod.Koulder_mod"
+		],
+		"fabric-datagen": [
+			"net.koulder_mod.Koulder_modDataGenerator"
+		]
+	},
+	"mixins": [
+		"koulder_mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
